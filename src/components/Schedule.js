@@ -5,7 +5,10 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import Card from './Card';
 import Bar from './Bar';
+import CarouselHours from './CarouselHours';
+import Days from './Days';
 import ScheduleButton from './ScheduleButton';
+
 
 const useStyles = makeStyles((theme) => ({
   
@@ -40,8 +43,10 @@ function App() {
           </Grid>
           <Grid item xs={8}>
             <Paper className={classes.paper}>
+
+              <Days />
               
-              
+              <CarouselHours />
               
               <ScheduleButton />
 
